@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from os import environ
-from urlparse import urlparse as _urlparse
+from urllib.parse import urlparse as _urlparse
 
 
 def lower_dict(d):
@@ -9,7 +9,7 @@ def lower_dict(d):
 
     _d = {}
 
-    for k, v in d.iteritems():
+    for k, v in d.items():
         try:
             _d[k.lower()] = v
         except AttributeError:
@@ -42,7 +42,7 @@ def prefix(prefix):
 
     prefix = prefix.lower()
 
-    for k, v in e.iteritems():
+    for k, v in e.items():
         try:
             if k.startswith(prefix):
                 k = k[len(prefix):]
@@ -61,7 +61,7 @@ def map(**kwargs):
     d = {}
     e = lower_dict(environ.copy())
 
-    for k, v in kwargs.iteritems():
+    for k, v in kwargs.items():
         d[k] = e.get(v.lower())
 
     return d
