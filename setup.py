@@ -34,11 +34,13 @@ from setuptools import setup
 
 setup(
     name='env',
-    version='0.1.0',
+    version='1.0.0',
     url='https://github.com/kennethreitz/env',
     license='BSD',
     author='Kenneth Reitz',
     author_email='me@kennethreitz.com',
+    maintainer='Adam Stokes',
+    maintainer_email='adam.stokes@ubuntu.com',
     description='Environment Variables for Humans',
     long_description=__doc__,
     py_modules=['env'],

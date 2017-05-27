@@ -35,4 +35,4 @@ Installation
 
 Installation is easy with pip::
 
-    $ pip install env
+    $ pip3 install git://github.com/battlemidget/env.git@1.0.0
